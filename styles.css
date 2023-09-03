@@ -73,7 +73,9 @@ nav a {
     text-decoration: none;
     display: block;
     padding: 1rem 1rem 0rem 1rem;
-    text-align: center;
+    text-align: start;
+
+
 }
 
 .close {
@@ -120,6 +122,10 @@ nav a:hover {
         justify-content: center;
     }
 
+    .home {
+        display: none;
+    }
+
     nav a {
         color: #2E3134;
     }
@@ -132,3 +138,27 @@ nav a:hover {
         content: "\a";
         white-space: pre;
     }
+}
+
+/* -----Footer styling stars here----- */
+
+footer {
+    background: #B09D78;
+
+}
+
+.footer-links {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.container-socialmedia {
+    display: flex;
+    gap: 5%;
+
+    border: red solid 1px;
+}
+
+.form {
+    display: flex;
+}
