@@ -110,7 +110,7 @@ nav a:hover {
         position: static;
         height: auto;
         transform: translateY(0);
-        border: red 2px solid;
+
 
     }
 
@@ -140,6 +140,53 @@ nav a:hover {
         content: "\a";
         white-space: pre;
     }
+}
+
+/* -----Main styling starts here----- */
+
+.news-container {
+
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+.news-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.news-image {
+    display: grid;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.news-image>* {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.card {
+    aspect-ratio: 1 / 1.6;
+    border: 3px solid hotpink;
+}
+
+.news-content {
+    background: rgb(206, 206, 206);
+    align-self: end;
+    margin: .5rem .5rem 2rem;
+    padding: .5rem;
+    box-shadow: 0 .25rem 1rem rgba(176, 175, 196, 0.926);
+
 }
 
 /* -----Footer styling stars here----- */
