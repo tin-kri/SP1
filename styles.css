@@ -20,6 +20,7 @@ header {
     letter-spacing: 2px;
     color: #2E3134;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 .identity {
@@ -91,6 +92,7 @@ nav a:hover {
 @media (min-width: 900px) {
     header {
         margin: 1rem auto;
+
     }
 
     .identity {
@@ -146,7 +148,7 @@ footer {
     background: #B09D78;
     padding-left: 30px;
     padding-top: 10px;
-
+    overflow: hidden;
 }
 
 .footer-links {
@@ -167,7 +169,7 @@ input {
     font-family: inherit;
     font-size: inherit;
     box-shadow: 4px 4px 10px rgba(39, 36, 31, 0.781);
-    width: 100%;
+    width: 93%;
     border: 0;
 }
 
@@ -175,11 +177,12 @@ input {
 .container-submit {
     text-align: center;
     margin-right: 15px;
+    width: 88%;
 }
 
 
 .button-subscribe {
-    width: 101%;
+    width: 100%;
     background-color: #2E3134;
     color: #F6F6F4;
     text-transform: uppercase;
@@ -192,6 +195,22 @@ input {
     }
 
     .container-socialmedia {
-        justify-content: right;
+        order: 3;
+        flex-grow: 3;
+        justify-content: end;
+        margin-right: 5%;
     }
+
+    .container-subscribe-newsletter {
+        justify-content: center;
+    }
+
+    .container-email {
+        width: 86%;
+    }
+
+    .container-links {
+        margin-right: 5%;
+    }
+
 }
