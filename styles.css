@@ -5,6 +5,10 @@ body {
     background: #F6F6F4;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 
 /* ------Header styling starts here----- */
 .hamburger,
@@ -144,8 +148,41 @@ nav a:hover {
 
 /* -----Main styling starts here----- */
 
-.news-container {
+/* -----Header container styling starts here----- */
 
+.heading-container {
+    border: solid red 2px;
+    /* position: relative; */
+}
+
+.header-image {
+    width: 100%;
+    position: relative;
+
+}
+
+h1 {
+    position: absolute;
+    top: 320px;
+    right: 30px;
+
+    background-color: #F6F6F4;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #40454A;
+    padding: 30px;
+}
+
+.header-p {
+    margin: 30px;
+    padding-top: 40px;
+    font-style: italic;
+
+}
+
+/* ---------- */
+.news-container {
     max-width: 100rem;
     margin-inline: auto;
     padding-inline: 2rem;
