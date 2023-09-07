@@ -151,32 +151,36 @@ nav a:hover {
 /* -----Header container styling starts here----- */
 
 .heading-container {
-    border: solid red 2px;
-    /* position: relative; */
+    position: relative;
+
+
 }
 
 .header-image {
+    object-fit: cover;
     width: 100%;
-    position: relative;
-
+    max-height: 35rem;
 }
+
+
 
 h1 {
     position: absolute;
-    top: 320px;
-    right: 30px;
+    bottom: 0px;
+    left: 0px;
 
-    background-color: #F6F6F4;
+    width: 70%;
     font-family: 'Barlow', sans-serif;
     font-weight: 800;
     font-size: 2rem;
+    margin: 0;
     color: #40454A;
-    padding: 30px;
+    background-color: #F6F6F4;
+
+
 }
 
 .header-p {
-    margin: 30px;
-    padding-top: 40px;
     font-style: italic;
 
 }
