@@ -5,6 +5,19 @@ body {
     background: #F6F6F4;
 }
 
+h1 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 70%;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 0;
+    color: #40454A;
+    background-color: #F6F6F4;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
 }
@@ -148,12 +161,10 @@ nav a:hover {
 
 /* -----Main styling starts here----- */
 
-/* -----Header container styling starts here----- */
+/* -----Heading container styling starts here----- */
 
 .heading-container {
     position: relative;
-
-
 }
 
 .header-image {
@@ -162,9 +173,7 @@ nav a:hover {
     max-height: 35rem;
 }
 
-
-
-h1 {
+/* h1 {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -176,16 +185,13 @@ h1 {
     margin: 0;
     color: #40454A;
     background-color: #F6F6F4;
-
-
-}
+} */
 
 .header-p {
     font-style: italic;
-
 }
 
-/* ---------- */
+/* -----News and happenings grid----- */
 .news-container {
     max-width: 100rem;
     margin-inline: auto;
@@ -196,12 +202,13 @@ img,
 picture {
     max-width: 100%;
     display: block;
+
 }
 
 .news-grid {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
 }
 
 .news-image {
@@ -226,7 +233,7 @@ picture {
     align-self: end;
     margin: .5rem .5rem 2rem;
     padding: .5rem;
-    box-shadow: 0 .25rem 1rem rgba(176, 175, 196, 0.926);
+
 
 }
 
