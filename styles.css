@@ -202,13 +202,12 @@ img,
 picture {
     max-width: 100%;
     display: block;
-
 }
 
 .news-grid {
     display: grid;
     gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .news-image {
@@ -224,16 +223,13 @@ picture {
 }
 
 .card {
-    aspect-ratio: 1 / 1.6;
     border: 3px solid hotpink;
+    margin-bottom: 1rem;
 }
 
 .news-content {
-    background: rgb(206, 206, 206);
+    background: rgba(170, 63, 63, 0.217);
     align-self: end;
-    margin: .5rem .5rem 2rem;
-    padding: .5rem;
-
 
 }
 
