@@ -278,6 +278,10 @@ picture {
     border: 0;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 
 /* -----Footer styling stars here----- */
 
