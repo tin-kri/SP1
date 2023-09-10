@@ -16,6 +16,8 @@ h1 {
     margin: 0;
     color: #40454A;
     background-color: #F6F6F4;
+    padding-top: 1rem;
+    padding-left: 30px;
 }
 
 h2 {
@@ -116,6 +118,10 @@ nav a:hover {
 
 }
 
+.figure-logo {
+    display: none;
+}
+
 
 @media (min-width: 900px) {
     header {
@@ -152,9 +158,7 @@ nav a:hover {
         justify-content: center;
     }
 
-    .home {
-        display: none;
-    }
+
 
     nav a {
         color: #2E3134;
@@ -202,6 +206,7 @@ nav a:hover {
     font-style: italic;
     margin-bottom: 4.5rem;
     margin-top: 2rem;
+    margin-left: 30px;
 }
 
 /* -----News and happenings grid----- */
@@ -245,6 +250,34 @@ picture {
     align-self: end;
 
 }
+
+
+/* -----Visit page styling----- */
+
+.hours-container,
+.ticket-container,
+.directions-container,
+.map-container {
+    margin: 30px;
+
+}
+
+.container-buy {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-buy {
+    width: 100%;
+    background-color: #2E3134;
+    color: #F6F6F4;
+    text-transform: uppercase;
+    border: 0;
+}
+
 
 /* -----Footer styling stars here----- */
 
