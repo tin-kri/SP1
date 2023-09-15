@@ -225,6 +225,13 @@ nav a:hover {
     margin-left: 30px;
 }
 
+@media (min-width: 900px) {
+    .header-p {
+        margin-right: 20%;
+    }
+
+}
+
 /* -----News and happenings grid----- */
 .news-container {
     max-width: 100rem;
@@ -279,7 +286,6 @@ picture {
 .item {
     margin: 5px;
     border: solid 2px pink;
-    flex: 0 1 auto;
 
 }
 
@@ -307,10 +313,13 @@ picture {
 
     .visit-container :nth-child(1) {
         order: 1;
+        flex: 1 0 100%;
     }
 
     .visit-container :nth-child(2) {
         order: 3;
+        flex: 0 1 50%;
+
     }
 
     .visit-container :nth-child(3) {
@@ -318,25 +327,16 @@ picture {
     }
 
     .visit-container :nth-child(4) {
-        order: 4;
-    }
-
-    .visit-container :nth-child(5) {
         order: 5;
-    }
-
-    .visit-container :nth-child(1) {
-        flex: 1 0 100%;
-    }
-
-    .visit-container :nth-child(4) {
-        flex: 1 0 100%;
+        flex: 1;
     }
 
     .visit-container :nth-child(5) {
-        flex: 0 0 40%;
+        order: 4;
+        flex: 1 0 100%;
 
     }
+
 
 
 }
