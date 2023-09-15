@@ -270,19 +270,81 @@ picture {
 
 /* -----Visit page styling----- */
 
-.hours-container,
-.ticket-container,
-.directions-container,
-.map-container {
-    margin: 30px;
+.visit-container {
+    display: flex;
+    flex-direction: column;
 
 }
 
-.container-buy {
-    margin: 30px;
-    display: flex;
+.item {
+    margin: 5px;
+    border: solid 2px pink;
+    flex: 0 1 auto;
+
+}
+
+.map-item,
+.wider-item {
+    object-fit: fill;
+}
+
+.wider-item {
+    flex: 1;
     justify-content: center;
-    align-items: center;
+}
+
+
+
+@media (min-width: 900px) {
+    .visit-container {
+        flex-direction: row;
+        margin: 5rem;
+        gap: 30px;
+        flex-wrap: wrap;
+
+
+    }
+
+    .visit-container :nth-child(1) {
+        order: 1;
+    }
+
+    .visit-container :nth-child(2) {
+        order: 3;
+    }
+
+    .visit-container :nth-child(3) {
+        order: 2;
+    }
+
+    .visit-container :nth-child(4) {
+        order: 4;
+    }
+
+    .visit-container :nth-child(5) {
+        order: 5;
+    }
+
+    .visit-container :nth-child(1) {
+        flex: 1 0 100%;
+    }
+
+    .visit-container :nth-child(4) {
+        flex: 1 0 100%;
+    }
+
+    .visit-container :nth-child(5) {
+        flex: 0 0 40%;
+
+    }
+
+
+}
+
+
+
+.visit-img {
+    object-fit: cover;
 
 }
 
@@ -298,6 +360,13 @@ picture {
     font-weight: bold;
 }
 
+/* -----Explore styling stars here----- */
+
+.explore-grid {
+    display: grid;
+}
+
+.explore-container {}
 
 /* -----Footer styling stars here----- */
 
