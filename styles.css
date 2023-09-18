@@ -362,11 +362,51 @@ picture {
 
 /* -----Explore styling stars here----- */
 
+
+
 .explore-grid {
     display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+
+    grid-template-rows: 350px 350px 350px;
+    /*set the width you want*/
+    grid-gap: 5%;
+
+    border: solid blue 5px;
+
 }
 
-.explore-container {}
+
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+
+
+/* Container holding the image and the text */
+.explore-card {
+
+    position: relative;
+    border: red solid 2px;
+
+}
+
+.explore-img {
+    height: 100%;
+    width: 100%;
+    /* order: -1; */
+    object-fit: cover;
+
+}
+
 
 /* -----Footer styling stars here----- */
 
