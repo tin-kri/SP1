@@ -372,10 +372,12 @@ https://www.youtube.com/watch?v=m04RkJwzFgE
 .explore-grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-template-rows: repeat(7, 20rem);
     grid-gap: 5%;
-
+    margin: 16px;
+    border: solid pink 4px;
+    overflow: hidden
 }
 
 .text-block {
