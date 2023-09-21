@@ -466,6 +466,53 @@ https://www.youtube.com/watch?v=m04RkJwzFgE
 
 }
 
+/* -----Education styling stars here---- */
+
+.education-img {
+    max-width: 100%
+}
+
+.flex-education-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.education-item-1 {
+    flex: 100%;
+}
+
+.education-item-2 {
+    flex: 100%;
+}
+
+.h2-education {
+    text-decoration: underline;
+
+}
+
+@media (min-width: 900px) {
+    .flex-education-container {
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    .education-item-1 {
+        flex: 30%;
+    }
+
+    .education-item-2 {
+        flex: 30%;
+    }
+
+    .education-img {
+        max-width:
+    }
+}
+
+
+
+
 /* -----Footer styling stars here----- */
 
 footer {
