@@ -43,8 +43,6 @@ h5 {
     font-weight: 500;
 }
 
-
-
 p {
     font-family: 'Roboto', sans-serif;
     line-height: 140%;
@@ -144,7 +142,6 @@ nav a:hover {
     width: 100%;
     max-height: 35rem;
 }
-
 
 .header-p {
     font-style: italic;
