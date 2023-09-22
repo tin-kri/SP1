@@ -441,6 +441,7 @@ input {
         gap: 30px;
         flex-wrap: wrap;
         overflow: hidden;
+        justify-content: space-between;
     }
 
     .visit-container :nth-child(1) {
