@@ -476,14 +476,16 @@ https://www.youtube.com/watch?v=m04RkJwzFgE
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    gap: 30px;
 }
 
 .education-item-1 {
-    flex: 100%;
+    flex: 80%;
+    margin-bottom: -5%;
 }
 
 .education-item-2 {
-    flex: 100%;
+    flex: 80%;
 }
 
 .h2-education {
@@ -495,19 +497,34 @@ https://www.youtube.com/watch?v=m04RkJwzFgE
     .flex-education-container {
         flex-direction: row;
         padding: 2rem;
+        gap: 3% 3%;
+        flex-wrap: wrap;
+
+
     }
 
     .education-item-1 {
-        flex: 30%;
+        flex: 40%;
+        order: 2;
+        margin-bottom: 4%;
     }
 
     .education-item-2 {
-        flex: 30%;
+        flex: 1 1 40%;
+        order: 1;
     }
 
-    .education-img {
-        max-width:
+    .education-item-3 {
+        flex: 1 1 40%;
+        order: 3;
     }
+
+    .education-item-4 {
+        flex: 1 1 40%;
+        order: 4;
+    }
+
+
 }
 
 
