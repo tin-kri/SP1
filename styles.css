@@ -29,10 +29,6 @@ h2 {
 h3 {
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
-
-
-
-
 }
 
 h4 {
@@ -40,13 +36,11 @@ h4 {
     font-weight: 800;
     font-size: 2.25rem;
     text-decoration: underline;
-
 }
 
 h5 {
     font-size: 1.25rem;
     font-weight: 500;
-
 }
 
 
@@ -58,6 +52,9 @@ p {
 
 
 /* ------Header styling starts here----- */
+/* Jen Kramer - HTML and CSS creating nav bars 
+(https: //www.linkedin.com/learning/html-and-css-creating-navigation-bars/solution-make-your-navbar-responsive?u=43268076) */
+
 .hamburger,
 .close {
     font-size: 2rem;
@@ -82,24 +79,20 @@ header {
 
 .headerlogo {
     max-width: 60%;
-
 }
 
 nav {
     background-color: #F6F6F4;
     position: absolute;
-    /* a higher z-index put navbar above hamburger */
     z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    /* style the bar in one cell and the close button in the other */
     display: flex;
     justify-content: space-between;
     text-align: center;
-
     /* animate slide up/down */
     transform: translateY(-100%);
     transition: transform 0.2s ease;
@@ -119,15 +112,12 @@ nav:target {
     transform: translateY(0);
 }
 
-
 nav a {
     color: #2E3134;
     text-decoration: none;
     display: block;
     padding: 1rem 1rem 0rem 1rem;
     text-align: start;
-
-
 }
 
 .close {
@@ -136,67 +126,13 @@ nav a {
 
 nav a:hover {
     color: #F3BA64;
-
 }
 
 .figure-logo {
     display: none;
 }
 
-
-@media (min-width: 900px) {
-    header {
-        margin: 1rem auto;
-
-    }
-
-    .identity {
-        margin-bottom: -120px;
-    }
-
-    .headerlogo {
-        display: none;
-    }
-
-    nav {
-        margin-top: 5%;
-        background-color: transparent;
-        padding: 0;
-        position: static;
-        height: auto;
-        transform: translateY(0);
-
-
-    }
-
-    .hamburger,
-    .close {
-        display: none;
-    }
-
-    nav ul {
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-
-
-
-    nav a {
-        color: #2E3134;
-    }
-
-    nav a:hover {
-        color: #F3BA64;
-    }
-
-    nav span::before {
-        content: "\a";
-        white-space: pre;
-    }
-}
-
 /* -----Main styling starts here----- */
-
 /* -----Heading container styling starts here----- */
 
 .heading-container {
@@ -209,19 +145,6 @@ nav a:hover {
     max-height: 35rem;
 }
 
-/* h1 {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-
-    width: 70%;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 800;
-    font-size: 2rem;
-    margin: 0;
-    color: #40454A;
-    background-color: #F6F6F4;
-} */
 
 .header-p {
     font-style: italic;
@@ -230,19 +153,13 @@ nav a:hover {
     margin-left: 30px;
 }
 
-@media (min-width: 900px) {
-    .header-p {
-        margin-right: 20%;
-    }
-
-}
 
 /* -----News and happenings grid----- */
 .news-container {
     max-width: 100rem;
-    margin-inline: auto;
-    padding-inline: 2rem;
     border: solid pinks 3px;
+    margin: 3%;
+    overflow: hidden;
 }
 
 img,
@@ -250,13 +167,11 @@ picture {
     max-width: 100%;
     max-height: auto;
     display: block;
-
 }
 
 .news-grid {
     display: grid;
     gap: 3rem;
-
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
@@ -264,10 +179,7 @@ picture {
     display: grid;
     object-fit: cover;
     width: 100%;
-    /* aspect-ratio: 1 / 1; */
-
 }
-
 
 .news-image>* {
     grid-column: 1 / 2;
@@ -285,7 +197,6 @@ picture {
 
 .clickable-h3 {
     text-decoration: underline;
-
 }
 
 /* -----Visit page styling----- */
@@ -293,13 +204,10 @@ picture {
 .visit-container {
     display: flex;
     flex-direction: column;
-
 }
 
 .item {
     margin: 5px;
-
-
 }
 
 .map-item,
@@ -312,52 +220,8 @@ picture {
     justify-content: center;
 }
 
-
-@media (min-width: 900px) {
-    .visit-container {
-        flex-direction: row;
-        margin: 5rem;
-        gap: 30px;
-        flex-wrap: wrap;
-
-
-    }
-
-    .visit-container :nth-child(1) {
-        order: 1;
-        flex: 1 0 100%;
-    }
-
-    .visit-container :nth-child(2) {
-        order: 3;
-        flex: 0 1 50%;
-
-    }
-
-    .visit-container :nth-child(3) {
-        order: 2;
-    }
-
-    .visit-container :nth-child(4) {
-        order: 5;
-        flex: 1;
-    }
-
-    .visit-container :nth-child(5) {
-        order: 4;
-        flex: 1 0 100%;
-
-    }
-
-
-
-}
-
-
-
 .visit-img {
     object-fit: cover;
-
 }
 
 .button-buy {
@@ -375,7 +239,7 @@ picture {
 /* -----Explore styling stars here----- */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
 https://css-tricks.com/snippets/css/complete-guide-grid/
-https://www.youtube.com/watch?v=m04RkJwzFgE
+Kevin Powell making grid (https://www.youtube.com/watch?v=m04RkJwzFgE)
  */
 
 .explore-grid {
@@ -384,8 +248,7 @@ https://www.youtube.com/watch?v=m04RkJwzFgE
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-template-rows: repeat(7, 20rem);
     grid-gap: 5%;
-    margin: 16px;
-
+    margin: 2%;
     overflow: hidden
 }
 
@@ -394,76 +257,42 @@ https://www.youtube.com/watch?v=m04RkJwzFgE
     bottom: 20px;
     color: white;
     padding-left: 20px;
-
 }
 
 .h5-description {
     margin-top: -2.5rem;
 }
 
-
-
 /* Container holding the image and the text */
 .explore-card {
-
     position: relative;
-
-
 }
 
 .explore-img {
     height: 100%;
     width: 100%;
-    /* order: -1; */
     object-fit: cover;
-
 }
-
-@media (min-width: 900px) {
-    .explore-grid {
-        grid-template-rows: repeat(4, 25rem);
-    }
-}
-
-
 
 /* -----Exhibition styling stars here----- */
 
 .grid-container {
     display: grid;
     gap: 2rem;
-    border: dotted 2px green;
     grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
-
-
+    margin: 2%;
 }
 
 .exhibiton-card {
     position: relative;
-
-
 }
 
 .exhibition-img {
     max-width: 100%;
-
-
 }
 
-/* .exhibiton-card-content {
-    border: solid pink 2px;
-    position: absolute;
-    margin-top: -3rem;
-    right: 2rem;
-    left: 0;
-    background-color: #F6F6F4;
-    padding: 2px;
-
-
-} */
 .h2-exhibitions {
     text-decoration: underline;
-
 }
 
 /* -----Education styling stars here---- */
@@ -477,6 +306,7 @@ https://www.youtube.com/watch?v=m04RkJwzFgE
     flex-wrap: wrap;
     flex-direction: column;
     gap: 30px;
+    margin: 3%;
 }
 
 .education-item-1 {
@@ -490,55 +320,15 @@ https://www.youtube.com/watch?v=m04RkJwzFgE
 
 .h2-education {
     text-decoration: underline;
-
 }
-
-@media (min-width: 900px) {
-    .flex-education-container {
-        flex-direction: row;
-        padding: 2rem;
-        gap: 3% 3%;
-        flex-wrap: wrap;
-
-
-    }
-
-    .education-item-1 {
-        flex: 40%;
-        order: 2;
-        margin-bottom: 4%;
-    }
-
-    .education-item-2 {
-        flex: 1 1 40%;
-        order: 1;
-    }
-
-    .education-item-3 {
-        flex: 1 1 40%;
-        order: 3;
-    }
-
-    .education-item-4 {
-        flex: 1 1 40%;
-        order: 4;
-    }
-
-
-}
-
-
-
 
 /* -----Footer styling stars here----- */
-
 footer {
     background: #B09D78;
     padding-left: 30px;
     padding-top: 10px;
     overflow: hidden;
     margin-top: 10rem;
-
 }
 
 .footer-links {
@@ -574,11 +364,150 @@ input {
 .button-subscribe {
     width: 100%;
     background-color: #2E3134;
+
     color: #F6F6F4;
     text-transform: uppercase;
     border: 0;
 }
 
+.fa-brands {
+    color: #2E3134;
+}
+
+
+
+
+/* -----Media queries----- */
+
+
+/* Header */
+@media (min-width: 900px) {
+    header {
+        margin: 1rem auto;
+    }
+
+    .identity {
+        margin-bottom: -120px;
+    }
+
+    .headerlogo {
+        display: none;
+    }
+
+    nav {
+        margin-top: 5%;
+        background-color: transparent;
+        padding: 0;
+        position: static;
+        height: auto;
+        transform: translateY(0);
+    }
+
+    .hamburger,
+    .close {
+        display: none;
+    }
+
+    nav ul {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        color: #2E3134;
+    }
+
+    nav a:hover {
+        color: #F3BA64;
+    }
+
+    nav span::before {
+        content: "\a";
+        white-space: pre;
+    }
+}
+
+/* Header p */
+@media (min-width: 900px) {
+    .header-p {
+        margin-right: 20%;
+    }
+}
+
+/* Visit  */
+/* Read documentation from mdn */
+@media (min-width: 900px) {
+    .visit-container {
+        flex-direction: row;
+        margin: 2rem;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .visit-container :nth-child(1) {
+        order: 1;
+        flex: 1 0 100%;
+    }
+
+    .visit-container :nth-child(2) {
+        order: 3;
+        flex: 0 1 50%;
+    }
+
+    .visit-container :nth-child(3) {
+        order: 2;
+    }
+
+    .visit-container :nth-child(4) {
+        order: 5;
+        flex: 1;
+    }
+
+    .visit-container :nth-child(5) {
+        order: 4;
+        flex: 1 0 100%;
+    }
+}
+
+/* Explore */
+@media (min-width: 900px) {
+    .explore-grid {
+        grid-template-rows: repeat(4, 25rem);
+    }
+}
+
+/* Education*/
+@media (min-width: 900px) {
+    .flex-education-container {
+        flex-direction: row;
+
+        gap: 3% 3%;
+        flex-wrap: wrap;
+    }
+
+    .education-item-1 {
+        flex: 40%;
+        order: 2;
+        margin-bottom: 4%;
+    }
+
+    .education-item-2 {
+        flex: 1 1 40%;
+        order: 1;
+    }
+
+    .education-item-3 {
+        flex: 1 1 40%;
+        order: 3;
+    }
+
+    .education-item-4 {
+        flex: 1 1 40%;
+        order: 4;
+    }
+}
+
+/* Footer */
 @media (min-width: 900px) {
     footer {
         display: flex;
