@@ -252,7 +252,8 @@ Kevin Powell making grid (https://www.youtube.com/watch?v=m04RkJwzFgE)
 .text-block {
     position: absolute;
     bottom: 20px;
-    color: white;
+    color: rgb(250, 248, 248);
+
     padding-left: 20px;
 }
 
