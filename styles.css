@@ -242,7 +242,7 @@ Kevin Powell making grid (https://www.youtube.com/watch?v=m04RkJwzFgE)
 .explore-grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(7, 20rem);
     grid-gap: 5%;
     margin: 2%;
@@ -277,7 +277,7 @@ Kevin Powell making grid (https://www.youtube.com/watch?v=m04RkJwzFgE)
 .grid-container {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 2%;
 }
 
@@ -440,6 +440,7 @@ input {
         margin: 2rem;
         gap: 30px;
         flex-wrap: wrap;
+        overflow: hidden;
     }
 
     .visit-container :nth-child(1) {
