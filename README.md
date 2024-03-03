@@ -1,6 +1,6 @@
 
 
-<h1 align="center" id="title">Community Science Museum</h1>
+<h1 align="center" id="title"><a href="https://sweet-stardust-20b2a6.netlify.app/">Community Science Museum</a></h1>
 
 <p align="center"><img src="https://socialify.git.ci/tin-kri/SP1/image?name=1&owner=1&theme=Light" alt="project-image"></p>
 
@@ -12,11 +12,12 @@
 
 <h3>Site architecture </h3> 
 
-*    Home List of Videos
-*   A video page showing the product details (product details such as the description of the product price and add to cart button)
-*   A checkout page
-*   A checkout success 
-*   About Contact
+*    Landing page
+*    Vist
+*    Explore
+*    Exhibitions
+*    Education
+
   
 <h2>💻 Built with</h2>
 
